@@ -1,3 +1,6 @@
+## 0.4.4
+* **Fixes** 
+
 ## 0.4.3
 * **Fixed** `WidgetsBinding` null warning
 

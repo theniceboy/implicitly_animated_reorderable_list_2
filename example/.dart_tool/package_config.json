@@ -50,10 +50,22 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "flutter_slidable",
+      "rootUri": "file:///Users/david/.pub-cache/hosted/pub.dartlang.org/flutter_slidable-0.6.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "flutter_test",
       "rootUri": "file:///Users/david/prog/flutter/packages/flutter_test",
       "packageUri": "lib/",
       "languageVersion": "2.17"
+    },
+    {
+      "name": "implicitly_animated_reorderable_list_2",
+      "rootUri": "../../",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "matcher",
@@ -128,13 +140,13 @@
       "languageVersion": "2.14"
     },
     {
-      "name": "implicitly_animated_reorderable_list_2",
+      "name": "example",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2022-06-26T06:17:21.722986Z",
+  "generated": "2022-06-26T06:17:22.047750Z",
   "generator": "pub",
   "generatorVersion": "2.17.5"
 }
