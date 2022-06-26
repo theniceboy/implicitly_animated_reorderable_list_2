@@ -1,28 +1,28 @@
 # Implicitly Animated Reorderable List
 
-[![pub package](https://img.shields.io/pub/v/implicitly_animated_reorderable_list.svg)](https://pub.dartlang.org/packages/implicitly_animated_reorderable_list)
-[![GitHub Stars](https://img.shields.io/github/stars/bxqm/implicitly_animated_reorderable_list.svg?logo=github)](https://github.com/bxqm/implicitly_animated_reorderable_list)
+[![pub package](https://img.shields.io/pub/v/implicitly_animated_reorderable_list_2.svg)](https://pub.dartlang.org/packages/implicitly_animated_reorderable_list_2)
+[![GitHub Stars](https://img.shields.io/github/stars/bxqm/implicitly_animated_reorderable_list_2.svg?logo=github)](https://github.com/bxqm/implicitly_animated_reorderable_list_2)
 
 A Flutter `ListView` that implicitly calculates the changes between two lists using the `MyersDiff` algorithm and animates between them for you. The `ImplicitlyAnimatedReorderableList` adds reordering support to its items with fully custom animations.
 
 <p style="text-align:center">
-    <img width="356px" alt="Demo" src="https://raw.githubusercontent.com/bxqm/implicitly_animated_reorderable_list/master/assets/demo.gif"/>
+    <img width="356px" alt="Demo" src="https://raw.githubusercontent.com/bxqm/implicitly_animated_reorderable_list_2/master/assets/demo.gif"/>
 </p>
 
-Click [here](https://github.com/bxqm/implicitly_animated_reorderable_list/blob/master/example/lib/ui/) to view the full example.
+Click [here](https://github.com/bxqm/implicitly_animated_reorderable_list_2/blob/master/example/lib/ui/) to view the full example.
 
 ## Installing
 
 Add it to your `pubspec.yaml` file:
 ```yaml
 dependencies:
-  implicitly_animated_reorderable_list: ^0.4.2
+  implicitly_animated_reorderable_list_2: ^0.4.2
 ```
 Install packages from the command line
 ```
 flutter packages get
 ```
-If you like this package, consider supporting it by giving it a star on [GitHub](https://github.com/bxqm/implicitly_animated_reorderable_list) and a like on [pub.dev](https://pub.dev/packages/implicitly_animated_reorderable_list) :heart:
+If you like this package, consider supporting it by giving it a star on [GitHub](https://github.com/bxqm/implicitly_animated_reorderable_list_2) and a like on [pub.dev](https://pub.dev/packages/implicitly_animated_reorderable_list_2) :heart:
 
 ## Usage
 
@@ -146,14 +146,14 @@ ImplicitlyAnimatedReorderableList<MyGenericType>(
   shrinkWrap: true,
 );
 ```
-> For a more in depth example click [here](https://github.com/bxqm/implicitly_animated_reorderable_list/blob/master/example/lib/ui/lang_page.dart).
+> For a more in depth example click [here](https://github.com/bxqm/implicitly_animated_reorderable_list_2/blob/master/example/lib/ui/lang_page.dart).
 
 ### Transitions
 
 You can use some custom transitions (such as the `SizeFadeTransition`) for item animations by importing the transitions pack:
 
 ```dart
-import 'package:implicitly_animated_reorderable_list/transitions.dart';
+import 'package:implicitly_animated_reorderable_list_2/transitions.dart';
 ```
 
 If you want to contribute your own custom transitions, feel free to make a pull request.
@@ -170,4 +170,4 @@ The diff algorithm that `ImplicitlyAnimatedList` uses was written by [Dawid Bota
 
 ### Roadmap
 
-You can take a look at the [Roadmap](https://github.com/bxqm/implicitly_animated_reorderable_list/blob/master/roadmap.md) to see which featues I am working on or plan to implement in future versions.
+You can take a look at the [Roadmap](https://github.com/bxqm/implicitly_animated_reorderable_list_2/blob/master/roadmap.md) to see which featues I am working on or plan to implement in future versions.

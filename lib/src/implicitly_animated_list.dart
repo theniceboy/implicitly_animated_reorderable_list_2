@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:implicitly_animated_reorderable_list/src/custom_sliver_animated_list.dart';
+import 'package:implicitly_animated_reorderable_list_2/src/custom_sliver_animated_list.dart';
 
 import 'src.dart';
 
@@ -175,7 +175,7 @@ class SliverImplicitlyAnimatedList<E extends Object>
     extends ImplicitlyAnimatedListBase<Widget, E> {
   /// Creates a Flutter Sliver that implicitly animates between the changes of two lists.
   ///
-  /// {@template implicitly_animated_reorderable_list.constructor}
+  /// {@template implicitly_animated_reorderable_list_2.constructor}
   /// The [items] parameter represents the current items that should be displayed in
   /// the list.
   ///

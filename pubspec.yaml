@@ -1,8 +1,8 @@
-name: implicitly_animated_reorderable_list
+name: implicitly_animated_reorderable_list_2
 description: A Flutter ListView that implicitly animates between the changes of
   two lists with the support to reorder its items.
-version: 0.4.2
-homepage: https://github.com/BendixMa/implicitly_animated_reorderable_list/tree/master/example/lib/ui
+version: 0.4.3
+homepage: https://github.com/theniceboy/implicitly_animated_reorderable_list_2/tree/master/example/lib/ui
 
 environment:
   sdk: '>=2.12.0 <3.0.0'

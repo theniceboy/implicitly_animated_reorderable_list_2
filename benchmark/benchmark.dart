@@ -1,4 +1,4 @@
-import 'package:implicitly_animated_reorderable_list/src/diff/myers_diff.dart';
+import 'package:implicitly_animated_reorderable_list_2/src/diff/myers_diff.dart';
 
 // ignore_for_file: avoid_print
 
