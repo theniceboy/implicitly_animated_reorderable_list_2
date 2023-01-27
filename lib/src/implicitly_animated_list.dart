@@ -11,7 +11,7 @@ class ImplicitlyAnimatedList<E extends Object> extends StatelessWidget {
   /// Called, as needed, to build list item widgets.
   ///
   /// List items are only built when they're scrolled into view.
-  final AnimatedItemBuilder<Widget, E> itemBuilder;
+  final ImplicitlyAnimatedItemBuilder<Widget, E> itemBuilder;
 
   /// An optional builder when an item was removed from the list.
   ///
@@ -198,7 +198,7 @@ class SliverImplicitlyAnimatedList<E extends Object>
   const SliverImplicitlyAnimatedList({
     Key? key,
     required List<E> items,
-    required AnimatedItemBuilder<Widget, E> itemBuilder,
+    required ImplicitlyAnimatedItemBuilder<Widget, E> itemBuilder,
     required ItemDiffUtil<E> areItemsTheSame,
     RemovedItemBuilder<Widget, E>? removeItemBuilder,
     UpdatedItemBuilder<Widget, E>? updateItemBuilder,
