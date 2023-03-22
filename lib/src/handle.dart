@@ -139,7 +139,7 @@ class _HandleState extends State<Handle> {
     _reorderable = Reorderable.of(context);
     assert(_reorderable != null,
         'No ancestor Reorderable was found in the hierarchy!');
-    _parent = Scrollable.of(_list!.context);
+    _parent = Scrollable.maybeOf(_list!.context);
 
     // Sometimes the cancel callbacks of the GestureDetector
     // are erroneously invoked. Use a plain Listener instead
