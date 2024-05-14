@@ -1,3 +1,6 @@
+## 0.6.0
+* **Fixes** package now works with flutter 3.22
+
 ## 0.4.4
 * **Fixes** 
 

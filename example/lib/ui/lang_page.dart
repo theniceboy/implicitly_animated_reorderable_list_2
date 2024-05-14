@@ -55,7 +55,7 @@ class _LanguagePageState extends State<LanguagePage>
     return Scaffold(
       appBar: AppBar(
         title: const Text('Examples'),
-        backgroundColor: theme.accentColor,
+        backgroundColor: theme.colorScheme.secondary,
         actions: <Widget>[
           _buildPopupMenuButton(textTheme),
         ],
@@ -195,35 +195,21 @@ class _LanguagePageState extends State<LanguagePage>
     final textTheme = theme.textTheme;
 
     final List<Widget> actions = [
-      SlideAction(
-        closeOnTap: true,
-        color: Colors.redAccent,
-        onTap: () => setState(() => selectedLanguages.remove(lang)),
-        child: Center(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: <Widget>[
-              const Icon(
-                Icons.delete,
-                color: Colors.white,
-              ),
-              const SizedBox(height: 4),
-              Text(
-                'Delete',
-                style: textTheme.bodyText2?.copyWith(
-                  color: Colors.white,
-                ),
-              ),
-            ],
-          ),
-        ),
+      SlidableAction(
+        autoClose: true,
+        backgroundColor: Colors.redAccent,
+        onPressed: (ctx) => setState(() => selectedLanguages.remove(lang)),
+        icon: Icons.delete,
+        label: 'Delete',
       ),
     ];
 
     return Slidable(
-      actionPane: const SlidableBehindActionPane(),
-      actions: actions,
-      secondaryActions: actions,
+      startActionPane: ActionPane(
+        motion: const DrawerMotion(),
+        extentRatio: 0.25,
+        children: actions,
+      ),
       child: Container(
         alignment: Alignment.center,
         // For testing different size item. You can comment this line
@@ -233,13 +219,13 @@ class _LanguagePageState extends State<LanguagePage>
         child: ListTile(
           title: Text(
             lang.nativeName,
-            style: textTheme.bodyText2?.copyWith(
+            style: textTheme.bodyMedium?.copyWith(
               fontSize: 16,
             ),
           ),
           subtitle: Text(
             lang.englishName,
-            style: textTheme.bodyText1?.copyWith(
+            style: textTheme.bodyLarge?.copyWith(
               fontSize: 15,
             ),
           ),
@@ -249,8 +235,8 @@ class _LanguagePageState extends State<LanguagePage>
             child: Center(
               child: Text(
                 '${selectedLanguages.indexOf(lang) + 1}',
-                style: textTheme.bodyText2?.copyWith(
-                  color: theme.accentColor,
+                style: textTheme.bodyMedium?.copyWith(
+                  color: theme.colorScheme.secondary,
                   fontSize: 16,
                 ),
               ),
@@ -294,12 +280,12 @@ class _LanguagePageState extends State<LanguagePage>
             children: <Widget>[
               Text(
                 item.nativeName,
-                style: textTheme.bodyText2,
+                style: textTheme.bodyMedium,
               ),
               const SizedBox(height: 8),
               Text(
                 item.englishName,
-                style: textTheme.bodyText1,
+                style: textTheme.bodyLarge,
               ),
             ],
           ),
@@ -341,7 +327,7 @@ class _LanguagePageState extends State<LanguagePage>
             ),
             title: Text(
               'Add a language',
-              style: textTheme.bodyText1?.copyWith(
+              style: textTheme.bodyLarge?.copyWith(
                 fontSize: 16,
               ),
             ),
@@ -371,7 +357,7 @@ class _LanguagePageState extends State<LanguagePage>
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
           child: Text(
             headline,
-            style: textTheme.bodyText1?.copyWith(
+            style: textTheme.bodyLarge?.copyWith(
               fontWeight: FontWeight.bold,
             ),
           ),
@@ -408,7 +394,7 @@ class _LanguagePageState extends State<LanguagePage>
           value: option,
           child: Text(
             option,
-            style: textTheme.bodyText1,
+            style: textTheme.bodyLarge,
           ),
         );
       }).toList(),

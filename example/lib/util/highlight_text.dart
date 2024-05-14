@@ -9,7 +9,6 @@ class HighlightText extends StatefulWidget {
   final TextDirection? textDirection;
   final bool softWrap;
   final TextOverflow overflow;
-  final double textScaleFactor;
   final int? maxLines;
   const HighlightText({
     Key? key,
@@ -21,7 +20,6 @@ class HighlightText extends StatefulWidget {
     this.textDirection,
     this.softWrap = true,
     this.overflow = TextOverflow.ellipsis,
-    this.textScaleFactor = 1.0,
     this.maxLines,
   }) : super(key: key);
 
@@ -30,7 +28,7 @@ class HighlightText extends StatefulWidget {
 }
 
 class _HighlightTextState extends State<HighlightText> {
-  TextStyle get style => widget.style ?? Theme.of(context).textTheme.bodyText2!;
+  TextStyle get style => widget.style ?? Theme.of(context).textTheme.bodyMedium!;
   TextStyle get activeStyle =>
       widget.activeStyle ?? style.copyWith(fontWeight: FontWeight.bold);
 
@@ -44,7 +42,7 @@ class _HighlightTextState extends State<HighlightText> {
       overflow: widget.overflow,
       softWrap: widget.softWrap,
       textDirection: widget.textDirection,
-      textScaleFactor: widget.textScaleFactor,
+      textScaler: MediaQuery.textScalerOf(context),
       text: TextSpan(
         children: idxs.map((idx) {
           return TextSpan(
@@ -145,7 +143,7 @@ class Triplet<A, B, C> {
 
   @override
   int get hashCode {
-    return hashList([
+    return Object.hashAll([
       first,
       second,
       third,
