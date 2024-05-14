@@ -1,7 +1,7 @@
 #!/bin/sh
 # This is a generated file; do not edit or check into version control.
-export "FLUTTER_ROOT=/Users/david/prog/flutter"
-export "FLUTTER_APPLICATION_PATH=/Users/david/Github/implicitly_animated_reorderable_list_2/example"
+export "FLUTTER_ROOT=/Users/alexander.mudzo/dev/flutter"
+export "FLUTTER_APPLICATION_PATH=/Users/alexander.mudzo/Documents/sources/implicitly_animated_reorderable_list_2/example"
 export "COCOAPODS_PARALLEL_CODE_SIGN=true"
 export "FLUTTER_TARGET=lib/main.dart"
 export "FLUTTER_BUILD_DIR=build"
