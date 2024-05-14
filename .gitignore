@@ -77,3 +77,4 @@ example/android/local.properties
 example/ios/Flutter/Generated.xcconfig
 example/ios/Flutter/flutter_export_environment.sh
 .vscode
+example/android/.gradle
