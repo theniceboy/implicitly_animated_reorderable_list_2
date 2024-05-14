@@ -6,6 +6,7 @@ import 'src.dart';
 typedef ReorderableBuilder = Widget Function(
   BuildContext context,
   Animation<double> animation,
+  // ignore: avoid_positional_boolean_parameters
   bool inDrag,
 );
 

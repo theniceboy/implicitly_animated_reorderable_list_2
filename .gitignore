@@ -1,1 +1,4 @@
 .dart_tool
+example/.dart_tool
+example/build
+example/.gradle
